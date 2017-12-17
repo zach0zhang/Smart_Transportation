@@ -13,7 +13,7 @@
 
 # 三、概要设计
 ## 3.1 系统结构
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/System_Structure.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/System_Structure.png)
 ## 3.2 模块功能说明
 1. 主菜单显示模块：显示主菜单界面，选择普通交通模拟模式或者智慧交通模拟模式或者退出。
 2. 地图显示模块：绘制程序运行地图，并且打印提示字符
@@ -39,7 +39,7 @@
 
 # 四、详细设计
 ##　4.1 系统流程图
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Process.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Process.png)
 
 ## 4.2 总地图设计
 分为四个路口，八个进出口，用八个长度为44的数组来表示地图上8*44个点
@@ -56,7 +56,7 @@ line1_1 dw 44 dup(0)
 line2_1 dw 44 dup(0)
 line3_1 dw 44 dup(0)
 ```
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Street.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Street.png)
 
 ## 4.3 路口具体设计
 每个路口有：
@@ -76,7 +76,7 @@ Left struc
 Left ends
 
 ```
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Cross.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Cross.png)
 
 ## 4.4 车辆行进
 ### 4.4.1 概述
@@ -101,7 +101,7 @@ car ends
 car_array car  337  dup(<>)
 ```
 ### 4.4.2 车辆前进算法
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Car_Run.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Car_Run.png)
 
 ## 4.5 显示模块
 1. 先设置屏幕显示模式(640*480*16)，再采用描点画图，通过INT10中断来描点画图。
@@ -133,7 +133,7 @@ light ends
 
 ```
 运行显示（可以看到左转弯待转区和右转缓冲区）：
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Show.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Show.png)
 
 ## 4.6 智慧交通
-![image](http://github.com/zach0zhang/Smart_Transportation/raw/master/md_images/Smart_Transport.png)
+![image](https://github.com/zach0zhang/Smart_Transportation/blob/master/md_images/Smart_Transport.png)
